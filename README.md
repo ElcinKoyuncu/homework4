@@ -5,7 +5,7 @@
 This is the homework for Code Quiz.
 
 ## Link for the repo
-[My second homework](https://elcinkoyuncu.github.io/homework4/)
+[My homework](https://elcinkoyuncu.github.io/homework4/)
 
 ## Screenshot for the application
 
