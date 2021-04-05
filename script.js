@@ -86,7 +86,7 @@ function startQuiz(){
     gameoverDiv.style.display = "none";
     startQuizDiv.style.display = "none";
     generateQuizQuestion();
-
+    
     //Timer
     timerInterval = setInterval(function() {
         timeLeft--;
@@ -96,6 +96,8 @@ function startQuiz(){
           clearInterval(timerInterval);
           showScore();
         }
+      
+    
       }, 1000);
     quizBody.style.display = "block";
 }
@@ -192,8 +194,12 @@ function checkAnswer(answer){
         //display in the results div that the answer is correct.
     }else if (answer !== correct && currentQuestionIndex !== finalQuestionIndex){
         alert("That Is Incorrect.")
+        timeLeft-=10;
         currentQuestionIndex++;
         generateQuizQuestion();
+       
+              
+      
         //display in the results div that the answer is wrong.
     }else{
         showScore();
